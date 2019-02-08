@@ -1,0 +1,339 @@
+@import url('https://bootswatch.com/4/united/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css');
+@import url('/font-awesome-4.7.0/css/font-awesome.min.css');
+
+.navbar-expand-md {
+  justify-content: flex-end !important;
+}
+
+input#brewedAfter {
+  display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+input#brewedB4 {
+  display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.title{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.notification.is-info {
+  background-color: grey;
+}
+
+#moreBeer {
+  cursor: pointer;
+}
+
+#search-box{
+  width: 80vw !important;
+}
+
+#brand-name{
+  font-size: 3em;
+  font-weight: bolder;
+  margin-bottom: -20px !important;
+}
+
+.navbar-color{
+  background-color: #f79009 !important;
+}
+
+.beerlist-padding{
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  width: 70vw;
+}
+
+.container-padding{
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.adsearch-text{
+    font-size: 2rem;
+    color: grey;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#tag-line{
+  color: #fff;
+  text-align: center;
+}
+
+#advanced-search{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+#advanced-search:hover{
+  font-weight: bold;
+  color: grey
+}
+
+.top-links{
+  display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.top-links:hover{
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-links.active{
+  border-bottom: 2px solid white;
+}
+
+
+
+// Loader
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(34°, 100%, 100%);
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+.loader {
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid orange;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+// Slide Fade
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+//
+// Fade
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+//
+// Fade slow
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 3s;
+}
+.fade-slow-enter,
+.fade-slow-leave-to {
+  opacity: 0;
+}
+
+.each-beer {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 8rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.each-beer:hover{
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+-moz-box-shadow: 0 0 20px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.7);
+-o-box-shadow: 0 0 20px rgba(0,0,0,0.7);
+cursor: pointer;
+}
+
+.beer-image{
+  max-width: 50vw;
+  height: 30vh;
+}
+
+.beer-name {
+  padding-top: 1rem;
+    font-size: 1.25rem;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: orange;
+}
+
+.modal-header{
+  border-bottom: 0px;
+}
+
+.beer-tagline{
+  color: lightgrey;
+  font-size: 1em;
+  padding-top: 0.2rem;
+}
+
+.hr-separator{
+  border: 2px solid purple;
+  width: 20%;
+  background-color: purple;
+  height: 0px;
+  margin-bottom: 1rem;
+}
+
+.others-tags {
+  font-size: 1rem;
+}
+
+.others-tags > strong {
+  color: grey;
+}
+
+.others-tags > span {
+  color: lightgrey;
+}
+
+.beer-desc > p {
+  padding-top: 1rem;
+  color: grey;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+.beer-bestserved > strong{
+  color: grey;
+}
+
+.beer-bestserved > ul{
+  list-style-type: disc !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    padding-inline-start: 40px !important;
+}
+
+.beer-bestserved > li{
+  color: grey;
+}
+
+.recommendLikes {
+  margin-top: 2rem;
+}
+
+#recommendDirection {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: orange;
+  padding-bottom: 2rem;
+}
+
+.recommendedBeer{
+  border: 1px solid grey;
+  padding: 2rem;
+}
+
+.recommendedBeer > img {
+  height: 100px;
+}
+
+.recommendedBeer > p{
+  padding-top: 1rem;
+  font-weight: bolder;
+  color: grey;
+}
+
+.modal{
+  z-index: 1050 !important;
+}
+
+.modal-backdrop {
+  z-index: auto;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .beer-image{
+    max-width: 50vw;
+    height: 30vh;
+  }
+
+  .each-beer {
+    width: 30vw;
+  margin-bottom: 2rem;
+  }
+
+  .container{
+    margin-left: 9rem !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .beer-image{
+    max-width: 50vw;
+    height: 70vh;
+  }
+
+  .each-beer{
+    width: auto !important;
+  }
+}
